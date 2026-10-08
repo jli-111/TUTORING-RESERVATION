@@ -1,0 +1,4 @@
+from .settings import *
+# MySQL is used for tests too: SQLite cannot validate InnoDB row locking.
+PASSWORD_HASHERS = ['django.contrib.auth.hashers.MD5PasswordHasher']
+EMAIL_BACKEND = 'django.core.mail.backends.locmem.EmailBackend'
